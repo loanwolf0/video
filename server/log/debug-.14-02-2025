@@ -1,0 +1,265 @@
+{
+  Time: '14 Feb 2025 12:58:50 1739518130030',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: ReferenceError: ObjectId is not defined
+      at module.exports.createQuiz (/var/www/vidyanova/server/controller/quizs.js:23:19)
+      at Layer.handle [as handle_request] (/var/www/vidyanova/server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/var/www/vidyanova/server/node_modules/express/lib/router/route.js:149:13)
+      at userAuthentication (/var/www/vidyanova/server/utils/authentication.js:46:13)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '14 Feb 2025 13:00:34 1739518234611',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: TypeError: Cannot read properties of undefined (reading 'create')
+      at module.exports.createQuiz (/var/www/vidyanova/server/dao/quizs.js:44:29)
+      at module.exports.createQuiz (/var/www/vidyanova/server/controller/quizs.js:38:34)
+      at Layer.handle [as handle_request] (/var/www/vidyanova/server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/var/www/vidyanova/server/node_modules/express/lib/router/route.js:149:13)
+      at userAuthentication (/var/www/vidyanova/server/utils/authentication.js:46:13)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '14 Feb 2025 15:06:46 1739525806443',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: CastError: Cast to ObjectId failed for value "{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }" (type Object) at path "_id" for model "topic"
+      at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:250:11)
+      at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+      at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+      at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+      at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+      at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async module.exports.updateTopic (/var/www/vidyanova/server/dao/topic.js:27:10) {
+    stringValue: `"{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }"`,
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: { courseId: new ObjectId('67ac4699e9e74a0f983bfb69') },
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (/var/www/vidyanova/server/node_modules/mongoose/node_modules/bson/lib/bson.cjs:2517:23)
+        at castObjectId (/var/www/vidyanova/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:248:12)
+        at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+        at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+        at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+        at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+        at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+        at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+        at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80),
+    valueType: 'Object'
+  }
+}
+{
+  Time: '14 Feb 2025 15:09:57 1739525997066',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: ReferenceError: userId is not defined
+      at /var/www/vidyanova/server/controller/quizs.js:47:25
+      at Array.map (<anonymous>)
+      at /var/www/vidyanova/server/controller/quizs.js:45:39
+      at Array.flatMap (<anonymous>)
+      at module.exports.createQuiz (/var/www/vidyanova/server/controller/quizs.js:44:46)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '14 Feb 2025 15:10:13 1739526013716',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: CastError: Cast to ObjectId failed for value "{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }" (type Object) at path "_id" for model "topic"
+      at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:250:11)
+      at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+      at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+      at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+      at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+      at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async module.exports.updateTopic (/var/www/vidyanova/server/dao/topic.js:27:10) {
+    stringValue: `"{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }"`,
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: { courseId: new ObjectId('67ac4699e9e74a0f983bfb69') },
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (/var/www/vidyanova/server/node_modules/mongoose/node_modules/bson/lib/bson.cjs:2517:23)
+        at castObjectId (/var/www/vidyanova/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:248:12)
+        at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+        at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+        at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+        at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+        at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+        at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+        at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80),
+    valueType: 'Object'
+  }
+}
+{
+  Time: '14 Feb 2025 15:15:32 1739526332250',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: CastError: Cast to ObjectId failed for value "{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }" (type Object) at path "_id" for model "topic"
+      at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:250:11)
+      at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+      at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+      at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+      at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+      at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async module.exports.updateTopic (/var/www/vidyanova/server/dao/topic.js:27:10) {
+    stringValue: `"{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }"`,
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: { courseId: new ObjectId('67ac4699e9e74a0f983bfb69') },
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (/var/www/vidyanova/server/node_modules/mongoose/node_modules/bson/lib/bson.cjs:2517:23)
+        at castObjectId (/var/www/vidyanova/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:248:12)
+        at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+        at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+        at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+        at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+        at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+        at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+        at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80),
+    valueType: 'Object'
+  }
+}
+{
+  Time: '14 Feb 2025 15:18:03 1739526483558',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: CastError: Cast to ObjectId failed for value "{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }" (type Object) at path "_id" for model "topic"
+      at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:250:11)
+      at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+      at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+      at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+      at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+      at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async module.exports.updateTopic (/var/www/vidyanova/server/dao/topic.js:27:10) {
+    stringValue: `"{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }"`,
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: { courseId: new ObjectId('67ac4699e9e74a0f983bfb69') },
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (/var/www/vidyanova/server/node_modules/mongoose/node_modules/bson/lib/bson.cjs:2517:23)
+        at castObjectId (/var/www/vidyanova/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:248:12)
+        at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+        at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+        at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+        at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+        at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+        at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+        at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80),
+    valueType: 'Object'
+  }
+}
+{
+  Time: '14 Feb 2025 15:19:16 1739526556882',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: CastError: Cast to ObjectId failed for value "{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }" (type Object) at path "_id" for model "topic"
+      at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:250:11)
+      at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+      at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+      at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+      at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+      at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async module.exports.updateTopic (/var/www/vidyanova/server/dao/topic.js:29:10) {
+    stringValue: `"{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }"`,
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: { courseId: new ObjectId('67ac4699e9e74a0f983bfb69') },
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (/var/www/vidyanova/server/node_modules/mongoose/node_modules/bson/lib/bson.cjs:2517:23)
+        at castObjectId (/var/www/vidyanova/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:248:12)
+        at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+        at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+        at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+        at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+        at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+        at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+        at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80),
+    valueType: 'Object'
+  }
+}
+{
+  Time: '14 Feb 2025 15:20:42 1739526642328',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: CastError: Cast to ObjectId failed for value "{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }" (type Object) at path "_id" for model "topic"
+      at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:250:11)
+      at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+      at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+      at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+      at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+      at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async module.exports.updateTopic (/var/www/vidyanova/server/dao/topic.js:29:10) {
+    stringValue: `"{ courseId: new ObjectId('67ac4699e9e74a0f983bfb69') }"`,
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: { courseId: new ObjectId('67ac4699e9e74a0f983bfb69') },
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (/var/www/vidyanova/server/node_modules/mongoose/node_modules/bson/lib/bson.cjs:2517:23)
+        at castObjectId (/var/www/vidyanova/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:248:12)
+        at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+        at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+        at cast (/var/www/vidyanova/server/node_modules/mongoose/lib/cast.js:319:34)
+        at Query.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4889:12)
+        at Query._castConditions (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:2306:10)
+        at model.Query._findOneAndUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3403:8)
+        at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80),
+    valueType: 'Object'
+  }
+}
+{
+  Time: '14 Feb 2025 15:25:51 1739526951243',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: ObjectParameterError: Parameter "filter" to updateMany() must be an object, got "67ac4699e9e74a0f983bfb69" (type object)
+      at _update (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4210:17)
+      at Query.updateMany (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4044:10)
+      at _update (/var/www/vidyanova/server/node_modules/mongoose/lib/model.js:4013:16)
+      at Function.updateMany (/var/www/vidyanova/server/node_modules/mongoose/lib/model.js:3904:10)
+      at module.exports.updateManyTopics (/var/www/vidyanova/server/dao/topic.js:33:28)
+      at module.exports.createQuiz (/var/www/vidyanova/server/controller/quizs.js:64:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '14 Feb 2025 15:26:39 1739526999237',
+  level: 'error',
+  functionName: 'createQuiz',
+  stack: ObjectParameterError: Parameter "filter" to updateMany() must be an object, got "67ac4699e9e74a0f983bfb69" (type object)
+      at _update (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4210:17)
+      at Query.updateMany (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4044:10)
+      at _update (/var/www/vidyanova/server/node_modules/mongoose/lib/model.js:4013:16)
+      at Function.updateMany (/var/www/vidyanova/server/node_modules/mongoose/lib/model.js:3904:10)
+      at module.exports.updateManyTopics (/var/www/vidyanova/server/dao/topic.js:35:28)
+      at module.exports.createQuiz (/var/www/vidyanova/server/controller/quizs.js:64:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}

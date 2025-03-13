@@ -1,0 +1,28 @@
+{
+  Time: '28 Feb 2025 12:01:00 1740724260128',
+  level: 'error',
+  functionName: 'loginUser',
+  stack: ReferenceError: paymentDao is not defined
+      at module.exports.loginUser (/home/agami/Desktop/videoCrafter/video-Crafter/server/controller/authenticate.js:155:34)
+}
+{
+  Time: '28 Feb 2025 12:01:54 1740724314791',
+  level: 'error',
+  functionName: 'loginUser',
+  stack: ReferenceError: paymentDao is not defined
+      at module.exports.loginUser (/home/agami/Desktop/videoCrafter/video-Crafter/server/controller/authenticate.js:155:34)
+}
+{
+  Time: '28 Feb 2025 12:02:33 1740724353212',
+  level: 'error',
+  functionName: 'loginUser',
+  stack: ReferenceError: plan is not defined
+      at module.exports.loginUser (/home/agami/Desktop/videoCrafter/video-Crafter/server/controller/authenticate.js:169:27)
+}
+{
+  Time: '28 Feb 2025 12:03:08 1740724388128',
+  level: 'error',
+  functionName: 'loginUser',
+  stack: ReferenceError: subscription is not defined
+      at module.exports.loginUser (/home/agami/Desktop/videoCrafter/video-Crafter/server/controller/authenticate.js:170:33)
+}

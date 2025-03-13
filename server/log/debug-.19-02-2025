@@ -1,0 +1,11 @@
+{
+  Time: '19 Feb 2025 10:28:25 1739941105960',
+  level: 'error',
+  functionName: 'deleteQuiz',
+  stack: ReferenceError: uid is not defined
+      at module.exports.updateQuiz (/var/www/vidyanova/server/controller/quizs.js:103:21)
+      at Layer.handle [as handle_request] (/var/www/vidyanova/server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/var/www/vidyanova/server/node_modules/express/lib/router/route.js:149:13)
+      at userAuthentication (/var/www/vidyanova/server/utils/authentication.js:46:13)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}

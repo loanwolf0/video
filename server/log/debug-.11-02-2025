@@ -1,0 +1,13 @@
+{
+  Time: '11 Feb 2025 16:05:32 1739270132061',
+  level: 'error',
+  functionName: 'generateAudioAndVisemes',
+  buffer: <Buffer 67 a1 b7 50 43 d7 d7 75 9a 7e c6 5d>,
+  stack: Error [TimeoutError]: socket hang up
+      at TLSSocket.socketOnEnd (node:_http_client:528:25)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    code: 'ECONNRESET'
+  }
+}

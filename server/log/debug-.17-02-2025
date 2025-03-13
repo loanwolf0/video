@@ -1,0 +1,138 @@
+{
+  Time: '17 Feb 2025 09:37:41 1739765261345',
+  level: 'error',
+  functionName: 'loginUser',
+  stack: TypeError: Cannot read properties of null (reading 'isFreeTrial')
+      at module.exports.loginUser (/var/www/vidyanova/server/controller/authenticate.js:133:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '17 Feb 2025 09:39:01 1739765341697',
+  level: 'error',
+  functionName: 'loginUser',
+  stack: TypeError: Cannot read properties of null (reading 'isFreeTrial')
+      at module.exports.loginUser (/var/www/vidyanova/server/controller/authenticate.js:133:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '17 Feb 2025 09:43:25 1739765605144',
+  level: 'error',
+  functionName: 'loginUser',
+  stack: TypeError: Cannot read properties of null (reading 'isFreeTrial')
+      at module.exports.loginUser (/var/www/vidyanova/server/controller/authenticate.js:133:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '17 Feb 2025 14:21:52 1739782312745',
+  level: 'error',
+  functionName: 'loginUser',
+  stack: TypeError: Cannot read properties of null (reading 'isFreeTrial')
+      at module.exports.loginUser (/var/www/vidyanova/server/controller/authenticate.js:133:80)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '17 Feb 2025 16:07:00 1739788620130',
+  level: 'error',
+  functionName: 'fetchQuizs',
+  userId: '67b2b7a8870f1d5051824e7a',
+  stack: MongoServerError: Invalid $project :: caused by :: Cannot do exclusion on field _id in inclusion projection
+      at Connection.sendCommand (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:296:27)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Connection.command (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:323:26)
+      at async Server.command (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:170:29)
+      at async AggregateOperation.executeCommand (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/operations/command.js:76:16)
+      at async AggregateOperation.execute (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/operations/aggregate.js:87:16)
+      at async tryOperation (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:203:20)
+      at async executeOperation (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:73:16)
+      at async AggregationCursor._initialize (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/cursor/aggregation_cursor.js:55:26)
+      at async AggregationCursor.cursorInit (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/cursor/abstract_cursor.js:607:27) {
+    errorResponse: {
+      ok: 0,
+      errmsg: 'Invalid $project :: caused by :: Cannot do exclusion on field _id in inclusion projection',
+      code: 31254,
+      codeName: 'Location31254'
+    },
+    ok: 0,
+    code: 31254,
+    codeName: 'Location31254',
+    [Symbol(errorLabels)]: Set(0) {}
+  }
+}
+{
+  Time: '17 Feb 2025 16:07:28 1739788648018',
+  level: 'error',
+  functionName: 'fetchQuizs',
+  userId: '67b2b7a8870f1d5051824e7a',
+  stack: MongoServerError: Invalid $project :: caused by :: Cannot do exclusion on field _id in inclusion projection
+      at Connection.sendCommand (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:296:27)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Connection.command (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:323:26)
+      at async Server.command (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:170:29)
+      at async AggregateOperation.executeCommand (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/operations/command.js:76:16)
+      at async AggregateOperation.execute (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/operations/aggregate.js:87:16)
+      at async tryOperation (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:203:20)
+      at async executeOperation (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:73:16)
+      at async AggregationCursor._initialize (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/cursor/aggregation_cursor.js:55:26)
+      at async AggregationCursor.cursorInit (/var/www/vidyanova/server/node_modules/mongoose/node_modules/mongodb/lib/cursor/abstract_cursor.js:607:27) {
+    errorResponse: {
+      ok: 0,
+      errmsg: 'Invalid $project :: caused by :: Cannot do exclusion on field _id in inclusion projection',
+      code: 31254,
+      codeName: 'Location31254'
+    },
+    ok: 0,
+    code: 31254,
+    codeName: 'Location31254',
+    [Symbol(errorLabels)]: Set(0) {}
+  }
+}
+{
+  Time: '17 Feb 2025 16:30:26 1739790026654',
+  level: 'error',
+  functionName: 'deleteQuiz',
+  stack: ReferenceError: courseId is not defined
+      at module.exports.deleteQuiz (/var/www/vidyanova/server/controller/quizs.js:81:53)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '17 Feb 2025 16:31:30 1739790090053',
+  level: 'error',
+  functionName: 'deleteQuiz',
+  stack: ReferenceError: courseId is not defined
+      at module.exports.deleteQuiz (/var/www/vidyanova/server/controller/quizs.js:82:53)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+{
+  Time: '17 Feb 2025 16:32:01 1739790121980',
+  level: 'error',
+  functionName: 'deleteQuiz',
+  stack: CastError: Cast to ObjectId failed for value "" (type string) at path "quiz" because of "BSONError"
+      at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:250:11)
+      at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at castUpdateVal (/var/www/vidyanova/server/node_modules/mongoose/lib/helpers/query/castUpdate.js:618:19)
+      at walkUpdatePath (/var/www/vidyanova/server/node_modules/mongoose/lib/helpers/query/castUpdate.js:423:24)
+      at castUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/helpers/query/castUpdate.js:134:7)
+      at model.Query._castUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4685:10)
+      at model.Query._updateThunk (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3878:25)
+      at model.Query._updateMany (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3953:23)
+      at model.Query.exec (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4438:80) {
+    stringValue: '""',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: '',
+    path: 'quiz',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (/var/www/vidyanova/server/node_modules/mongoose/node_modules/bson/lib/bson.cjs:2517:23)
+        at castObjectId (/var/www/vidyanova/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at SchemaObjectId.cast (/var/www/vidyanova/server/node_modules/mongoose/lib/schema/objectId.js:248:12)
+        at SchemaType.applySetters (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1255:12)
+        at SchemaType.castForQuery (/var/www/vidyanova/server/node_modules/mongoose/lib/schemaType.js:1673:17)
+        at castUpdateVal (/var/www/vidyanova/server/node_modules/mongoose/lib/helpers/query/castUpdate.js:618:19)
+        at walkUpdatePath (/var/www/vidyanova/server/node_modules/mongoose/lib/helpers/query/castUpdate.js:423:24)
+        at castUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/helpers/query/castUpdate.js:134:7)
+        at model.Query._castUpdate (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:4685:10)
+        at model.Query._updateThunk (/var/www/vidyanova/server/node_modules/mongoose/lib/query.js:3878:25),
+    valueType: 'string'
+  }
+}
