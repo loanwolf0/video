@@ -14,6 +14,8 @@ if (!fs.existsSync('./temporary')) {
   fs.mkdirSync('./temporary');
 }
 
+// require('./aiConnect/ai_audio_rep.js')
+
 // Middleware to parse JSON in request body
 app.use(express.urlencoded({ limit: '100mb', extended: true }));
 app.use(express.json({ limit: '100mb' }))

@@ -32,6 +32,7 @@
     "nodemon": "^3.1.9",
     "openai": "^4.47.1",
     "razorpay": "^2.9.5",
+    "replicate": "^1.0.1",
     "sharp": "^0.33.3",
     "short-uuid": "^5.2.0",
     "winston": "^3.13.0",
